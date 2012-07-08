@@ -1,4 +1,3 @@
-
 About
 =====
 
@@ -38,6 +37,6 @@ The fabulous spectrum background was downloaded from [TECHSTARTD][youtube-channe
   [github-project]: https://github.com/ragunathjawahar/circular-list-adapter
   [sources-download-link]: https://github.com/ragunathjawahar/circular-list-adapter/zipball/master
   [jar-download]: https://github.com/ragunathjawahar/circular-list-adapter/downloads
-  [simple-example-link]: https://github.com/ragunathjawahar/circular-list-adapter/blob/master/src/com/mobsandgeeks/adapters/demo/CircularSentenceActivity.java
+  [simple-example-link]: https://github.com/ragunathjawahar/circular-list-adapter/blob/master/src/com/mobsandgeeks/demo/CircularSentenceActivity.java
   [youtube-channel-link]: http://www.youtube.com/watch?v=09NobleGXns
   
