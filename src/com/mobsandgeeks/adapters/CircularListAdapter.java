@@ -99,6 +99,8 @@ public class CircularListAdapter extends BaseAdapter {
     @Override
     public void notifyDataSetChanged() {
         listAdapter.notifyDataSetChanged();
+        listAdapterCount = listAdapter.getCount();
+        
         super.notifyDataSetChanged();
     }
 
