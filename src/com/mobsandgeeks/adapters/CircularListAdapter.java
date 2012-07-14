@@ -25,7 +25,7 @@ import android.widget.ListView;
 /**
  * A circular adapter that makes your {@link ListView} appear circular.
  * 
- * @author ragunathjawahar
+ * @author Ragunath Jawahar <rj@mobsandgeeks.com>
  * @version 0.1
  */
 public class CircularListAdapter extends BaseAdapter {
