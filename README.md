@@ -17,9 +17,10 @@ Usage
 -----
 
     // 1. Wrap your existing adapter with the CircularListAdapter
-    ...
     CircularListAdapter circularAdapter = new CircularListAdapter(yourAdapter);
-    ...
+    
+    // 2. Set the adapter to your ListView
+    listView.setAdapter(circularAdapter);
 
 Also you can check a [complete example][simple-example-link] for a quick start. The [sources][sources-download-link] have a few more examples as well.
 
