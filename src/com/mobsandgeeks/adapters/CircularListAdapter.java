@@ -34,8 +34,8 @@ public class CircularListAdapter extends BaseAdapter {
     static final String TAG = CircularListAdapter.class.getSimpleName();
     
     // Attributes
-    private BaseAdapter listAdapter;
-    private int listAdapterCount;
+    private BaseAdapter mListAdapter;
+    private int mListAdapterCount;
     
     /**
      * Constructs a {@linkplain CircularListAdapter}.
@@ -47,8 +47,8 @@ public class CircularListAdapter extends BaseAdapter {
             throw new IllegalArgumentException("listAdapter cannot be null.");
         }
         
-        this.listAdapter = listAdapter;
-        this.listAdapterCount = listAdapter.getCount();
+        this.mListAdapter = listAdapter;
+        this.mListAdapterCount = listAdapter.getCount();
     }
     
     @Override
@@ -58,67 +58,67 @@ public class CircularListAdapter extends BaseAdapter {
     
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        return listAdapter.getView(position % listAdapterCount, convertView, parent);
+        return mListAdapter.getView(position % mListAdapterCount, convertView, parent);
     }
 
     @Override
     public Object getItem(int position) {
-        return listAdapter.getItem(position % listAdapterCount);
+        return mListAdapter.getItem(position % mListAdapterCount);
     }
 
     @Override
     public long getItemId(int position) {
-        return listAdapter.getItemId(position % listAdapterCount);
+        return mListAdapter.getItemId(position % mListAdapterCount);
     }
 
     @Override
     public boolean areAllItemsEnabled() {
-        return listAdapter.areAllItemsEnabled();
+        return mListAdapter.areAllItemsEnabled();
     }
 
     @Override
     public int getItemViewType(int position) {
-        return listAdapter.getItemViewType(position % listAdapterCount);
+        return mListAdapter.getItemViewType(position % mListAdapterCount);
     }
 
     @Override
     public int getViewTypeCount() {
-        return listAdapter.getViewTypeCount();
+        return mListAdapter.getViewTypeCount();
     }
 
     @Override
     public boolean isEmpty() {
-        return listAdapter.isEmpty();
+        return mListAdapter.isEmpty();
     }
 
     @Override
     public boolean isEnabled(int position) {
-        return listAdapter.isEnabled(position % listAdapterCount);
+        return mListAdapter.isEnabled(position % mListAdapterCount);
     }
 
     @Override
     public void notifyDataSetChanged() {
-        listAdapter.notifyDataSetChanged();
-        listAdapterCount = listAdapter.getCount();
+        mListAdapter.notifyDataSetChanged();
+        mListAdapterCount = mListAdapter.getCount();
         
         super.notifyDataSetChanged();
     }
 
     @Override
     public void notifyDataSetInvalidated() {
-        listAdapter.notifyDataSetInvalidated();
+        mListAdapter.notifyDataSetInvalidated();
         super.notifyDataSetInvalidated();
     }
 
     @Override
     public View getDropDownView(int position, View convertView, ViewGroup parent) {
-        return listAdapter.getDropDownView(position % listAdapterCount, 
+        return mListAdapter.getDropDownView(position % mListAdapterCount, 
                 convertView, parent);
     }
 
     @Override
     public boolean hasStableIds() {
-        return listAdapter.hasStableIds();
+        return mListAdapter.hasStableIds();
     }
     
 }
