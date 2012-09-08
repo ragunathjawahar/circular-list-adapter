@@ -1,5 +1,5 @@
 About
-=====
+-----
 
 Circular list adapter for Android's [ListView][list-view-link]. This adapter makes your existing list adapter appear circular and possibly infinite unless you scroll down through two billion list items ;). Works with list adapters that you already have. No project specific dependencies. Just include the [latest jar][jar-download] or the [sources][sources-download-link] to your Android project.
 
